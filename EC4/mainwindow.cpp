@@ -190,7 +190,7 @@ void MainWindow::showAnalytics() {
     QString user = QInputDialog::getText(this, "User Analytics", "Enter username:");
     if (user.isEmpty()) return;
 
-    QString absolutePath = "C:/Programming/Uni/OOP_A1S2/Extra Credit/ExtraCredit4_Qt/EC4/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/" + user + ".csv";
+    QString absolutePath = "C:/PATH/" + user + ".csv";
     QFile file(absolutePath);
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {

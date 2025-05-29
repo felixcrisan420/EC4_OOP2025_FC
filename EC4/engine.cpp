@@ -14,7 +14,7 @@ GameEngine::GameEngine(int wordLength) : wordLength(wordLength) {
 
 void GameEngine::loadAndBuild() {
     qDebug() << "Loading...\n";
-    dictionary = readFromFile("C:/Programming/Uni/OOP_A1S2/Extra Credit/ExtraCredit4_Qt/EC4/words.txt", wordLength);
+    dictionary = readFromFile("C:/PATH/words.txt", wordLength);
 
     qDebug() << "Words loaded:" << dictionary.size();
 
