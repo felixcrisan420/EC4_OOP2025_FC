@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Word Ladder Game</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="automaticTab">
+       <attribute name="title">
+        <string>Automatic Mode</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayoutAuto">
+        <item>
+         <widget class="QComboBox" name="startCombo"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="targetCombo"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="solveButton">
+          <property name="text">
+           <string>Solve</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="resultList"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="playTab">
+       <attribute name="title">
+        <string>Play Mode</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayoutPlay">
+        <item>
+         <widget class="QLineEdit" name="nameInput"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="wordLengthCombo"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="startGameButton">
+          <property name="text">
+           <string>Start Game</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="currentWordLabel">
+          <property name="text">
+           <string>Current Word</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="nextWordInput"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="submitButton">
+          <property name="text">
+           <string>Submit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="moveList"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="hintButton">
+          <property name="text">
+           <string>Hint</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="hintLabel">
+          <property name="text">
+           <string>Hint appears here</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="stepsRemainingLabel">
+          <property name="text">
+           <string>Words left: ?</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="analyticsTab">
+       <attribute name="title">
+        <string>Analytics</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayoutAnalytics">
+        <item>
+         <widget class="QLineEdit" name="analyticsNameInput">
+          <property name="placeholderText">
+           <string>Enter username...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="analyticsLoadButton">
+          <property name="text">
+           <string>Load Statistics</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="analyticsResultsLabel">
+          <property name="text">
+           <string>Some random statistics idk</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
